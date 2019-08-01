@@ -136,6 +136,6 @@ oc patch nodes ip-10-0-50-53.us-east-2.compute.internal -p  '{"spec":{"taints":[
 oc patch dc cache -p '{"spec":{"template":{"spec":{"affinity":{ "nodeAffinity":{ "requiredDuringSchedulingIgnoredDuringExecution":[{"preference":{"matchExpressions":[{"key":"ssd","operator":"In","values":["true"]},{"key":"failure-domain.beta.kubernetes.io/zone","operator": "In","values":["us-east-2a"]}]}}]}}}}}}'
 
 ```
-
+http://convertjson.com/yaml-to-json.htm
 https://labs.consol.de/development/2019/04/08/oc-patch-unleashed.html
 
